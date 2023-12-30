@@ -203,7 +203,7 @@ function Tree:init(options)
     ---@deprecated
     win_options = vim.tbl_extend("force", {
       foldcolumn = "0",
-      foldmethod = "manual",
+      -- foldmethod = "manual",
       wrap = false,
     }, defaults(options.win_options, {})),
     get_node_id = defaults(options.get_node_id, tree_util.default_get_node_id),
